@@ -1,0 +1,220 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+/* nav */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block:16px;
+    border-bottom:1px solid black;
+    padding-inline: 48px; 
+}
+
+.logo{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.navbar{
+    display: flex;
+    gap: 32px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.main-container{
+    padding-inline: 48px;
+}
+
+/* Home */
+
+#home{
+    min-height: 100vh;
+    text-align: center;
+    margin-top: 48px;
+    padding-block:96px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px; 
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+
+}
+
+/* portfolio */
+
+#portfolio{
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    padding-block: 48px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container h3{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+.text-container h4{
+    font-family: "Roboto Mono", monospace;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* about */
+
+#about{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 48px;
+    gap: 48px;
+}
+
+#about h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    width: 50%;
+}
+
+p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 17px;
+    font-weight: 400;
+    width: 45%;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding-block:96px;
+    gap: 48px;
+    align-items: center; 
+    margin-bottom:48px; 
+}
+
+h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.input-container{
+    display: flex;
+    width: 600px;
+    gap: 12px;
+}
+input{
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto Mono", monospace;
+}
+
+button{
+    background-color: #000000;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+button h4{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.socials{
+    display: flex;
+    gap:32px;
+}
+
+.socials img{
+    width: 48px;
+}
+
+/* footer */
+
+footer{
+    padding-top: 96px;
+    padding-bottom: 32px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+footer .container .btn{
+    border: 1px solid #000000;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+footer .container .btn h6{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1024px){
+    nav{
+        display: block;
+        text-align: center;
+    }
+    .navbar{
+        display: none;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .project{
+        text-align: center;
+        padding: 20px;
+    }
+    .input-container{
+        width: 100%;
+    }
+}
